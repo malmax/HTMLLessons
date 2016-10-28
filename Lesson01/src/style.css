@@ -1,0 +1,24 @@
+.container-12 {
+    width: 1024px;
+    margin: 0 auto;
+}
+.container-4 {
+    width: 341px;/* Не 341 Иначе будут контейнеры переноситься*/
+    float: left;
+    border-width: 0;
+    padding: 0;
+}
+.container-8 {
+    width: 683px;
+    float: left;
+    border-width: 0;
+    padding: 0;
+}
+.clear {
+    float: none;
+    clear: both;
+}
+.row {
+    clear: both;
+    widows: 100%;
+}
