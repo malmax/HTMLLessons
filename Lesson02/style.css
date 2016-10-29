@@ -1,0 +1,50 @@
+.menu-item {
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    border: 1px solid gray;
+    text-align: center;
+    vertical-align: middle;
+    /*TODO: Почему не работает?*/
+}
+
+body {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.product {
+    width: 300px;
+    text-align: center;
+    float: left;
+    /*TODO: Почему так работает, а Display:inline-block объединяет в строчку только два товара*/
+}
+
+.product button {
+    display: block;
+    /*TODO: Почему не работает? */
+    width: 100px;
+}
+
+.container-4 {
+    width: 300px;
+    float: left;
+}
+
+.container-4 img {
+    width: 200px;
+}
+
+.container-12 {
+    width: 900px;
+}
+
+.container-6 {
+    width: 450px;
+    float: left;
+}
+
+.clear {
+    clear: both;
+}
