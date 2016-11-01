@@ -1,0 +1,131 @@
+/*меню*/
+
+.menu-item {
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    border: 1px solid gray;
+    text-align: center;
+    vertical-align: middle;
+    /*TODO: Почему не работает?*/
+    font-family: Consolas;
+    font-size: 18px;
+}
+
+.menu-item a:visited, .menu-item a {
+    color: #564cab;
+    text-decoration: none;
+}
+
+.menu-item a:hover {
+    text-decoration: underline;
+}
+
+
+/*Страница с описанием продукта*/
+
+body.product-display h1, body.product-display h2, body.product-display h3, body.product-display h4, body.product-display h5, body.product-display h6 {
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #eaeaea;
+}
+
+body.product-display .shortdescription {
+    color: #707070;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+}
+
+body.product-display .fulldesc {
+    color: #484343;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+body.product-display .techs li {
+    color: #7e7e7e;
+    text-decoration: underline;
+    font-size: 14px;
+    font-family: Consolas;
+    list-style-type: upper-latin;
+}
+
+body.product-display .techs ul li {
+    font-weight: bold;
+    list-style-type: upper-roman;
+}
+
+body.product-display img {
+    border: 1px solid red;
+}
+
+body.product-display img:hover {
+    border: 1px solid white;
+}
+
+
+/*Страница с контактными данными*/
+
+body.contacts form {
+    text-align: right;
+}
+
+body.contacts input[type=text] {
+    width: 300px;
+    height: 30px;
+    color: brown;
+    font-size: 16px;
+}
+
+.product {
+    width: 300px;
+    text-align: center;
+    float: left;
+    /*TODO: Почему так работает, а Display:inline-block объединяет в строчку только два товара*/
+}
+
+.product button {
+    display: block;
+    /*TODO: Почему не работает? */
+    width: 100px;
+}
+
+
+/*общие свойства*/
+
+body {
+    width: 900px;
+    margin: 0 auto;
+    background-color: #f8f8f8;
+}
+
+.container-4 {
+    width: 300px;
+    float: left;
+}
+
+.container-4 img {
+    width: 200px;
+}
+
+.container-12 {
+    width: 900px;
+}
+
+.container-6 {
+    width: 450px;
+    float: left;
+}
+
+.clear {
+    clear: both;
+}
+
+.bold {
+    font-weight: bold;
+}
