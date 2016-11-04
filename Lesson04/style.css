@@ -17,6 +17,10 @@
     padding: 0;
 }
 
+.primary-menu a:hover {
+    color: #78BED1;
+}
+
 .secondary-menu li {
     display: inline-block;
     padding-right: 10px;
@@ -72,9 +76,18 @@ body.product-display .cover img {
 }
 
 body.product-display .cover img:hover {
-    border: 1px solid white;
+    border: 1px solid transparent;
 }
 
+body.product-display .fulldesc p::first-letter {
+    font-size: 24px;
+    color: #AB4E41;
+}
+
+/* таблицы */
+table td[rowspan="3"] {
+    
+}
 
 /*Страница с контактными данными*/
 
@@ -87,6 +100,15 @@ body.contacts input[type=text] {
     height: 30px;
     color: brown;
     font-size: 16px;
+}
+
+.contactus input[type=text] {
+    text-transform: capitalize;
+}
+
+body.contacts input[name=email]:focus {
+    color: #567979;
+    border-color: #567979;
 }
 
 .product {
@@ -112,7 +134,7 @@ body {
 }
 
 a:visited, a {
-    color: #564cab;
+    color: #567979;
     text-decoration: none;
     white-space: nowrap;
 }
