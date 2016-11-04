@@ -85,8 +85,8 @@ body.product-display .fulldesc p::first-letter {
 }
 
 /* таблицы */
-table td[rowspan="3"] {
-    
+table tr:first-child {
+    height: 50px;
 }
 
 /*Страница с контактными данными*/
