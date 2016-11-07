@@ -91,22 +91,22 @@ table tr:first-child {
 
 /*Страница с контактными данными*/
 
-body.contacts form {
+.contactus form {
     text-align: right;
 }
 
-body.contacts input[type=text] {
+.contactus input[type=text], .contactus textarea {
     width: 300px;
-    height: 30px;
     color: brown;
     font-size: 16px;
 }
 
 .contactus input[type=text] {
     text-transform: capitalize;
+    height: 30px;
 }
 
-body.contacts input[name=email]:focus {
+.contactus input[name=email]:focus {
     color: #567979;
     border-color: #567979;
 }
@@ -185,18 +185,18 @@ a:hover {
 
 /*стили для блока .header*/
 
-.header .logo img {
+header .logo img {
     max-width: 350px;
     padding-top: 10px;
 }
 
-.header .search-block input[type=text] {
+header .search-block input[type=text] {
     width: 400px;
     height: 30px;
     font-size: 16px;
 }
 
-.header .search-block input[type=submit] {
+header .search-block input[type=submit] {
     width: 30px;
     height: 30px;
     font-size: 14px;
