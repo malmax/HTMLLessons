@@ -21,7 +21,8 @@ body {
 .product {
     width: 300px;
     text-align: center;
-    float: left;
+    /*float: left;*/
+    display: inline-block;
     /*TODO: Почему так работает, а Display:inline-block объединяет в строчку только два товара*/
 }
 
