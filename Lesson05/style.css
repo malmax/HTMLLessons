@@ -85,10 +85,13 @@ body.product-display .fulldesc p::first-letter {
     color: #AB4E41;
 }
 
+
 /* таблицы */
+
 table tr:first-child {
     height: 50px;
 }
+
 
 /*Страница с контактными данными*/
 
@@ -102,8 +105,6 @@ table tr:first-child {
     font-size: 16px;
 }
 
-
-
 .contactus input[type=text] {
     text-transform: capitalize;
     height: 30px;
@@ -114,29 +115,14 @@ table tr:first-child {
     border-color: #567979;
 }
 
-.product {
-    width: 300px;
-    text-align: center;
-    float: left;
-    /*TODO: Почему так работает, а Display:inline-block объединяет в строчку только два товара*/
-}
-
-.product button {
-    display: block;
-    /*TODO: Почему не работает? */
-    width: 100px;
-}
-
-
 /*общие свойства*/
+
 body {
-  padding: 0;
-  margin: 0;
-  background: url('img/debut_light.png') #f8f8f8;
-  /*background-color:  #f8f8f8;*/
+    padding: 0;
+    margin: 0;
+    background: url('img/debut_light.png') #f8f8f8;
+    /*background-color:  #f8f8f8;*/
 }
-
-
 
 a:visited, a {
     color: #567979;
@@ -159,7 +145,7 @@ a:hover {
     border-radius: 5%;
     display: block;
     overflow: hidden;
-    padding-top: 10px;
+    padding: 10px 0;
     width: 215px;
 }
 
@@ -191,15 +177,18 @@ section.row {
     overflow: hidden;
     margin-bottom: 10px;
 }
+
+
 /*стили для блока .header*/
 
 header .logo img {
     max-width: 350px;
     padding-top: 10px;
 }
+
 header .logo {
-  box-sizing: border-box;
-  padding-left: 20px;
+    box-sizing: border-box;
+    padding-left: 20px;
 }
 
 header .search-block input[type=text] {
@@ -213,6 +202,7 @@ header .search-block input[type=submit] {
     height: 30px;
     font-size: 14px;
 }
+
 .container {
     margin: 0 auto;
     box-shadow: 0 0 3px gray;
@@ -222,37 +212,57 @@ header .search-block input[type=submit] {
     padding: 0 5px;*/
 }
 
-.container > header {
-  height:110px;
-  background: url("img/subtle_dots.png");
+.buybutton input[type=button] {
+    cursor: pointer;
+    padding: 3px 10px;
+    margin-left: 15px;
+    background-color: white;
+    border: 1px solid gray;
+    font-size: 1.1rem;
+}
+
+.buybutton input[type=button]:hover {
+    color: #567979;
+    border: 1px solid #567979;
+}
+
+.buybutton input[type=button]:active {
+    background-color: #567979;
+    color: white;
+}
+
+.container>header {
+    height: 110px;
+    background: url("img/subtle_dots.png");
+    padding: 0 5px;
+}
+
+.container>header li {
+    background-color: white;
+}
+
+.container>hr {
+    margin: 0;
+    padding: 0;
+}
+
+.container>section {
+    margin: 10px 0;
+    box-sizing: border-box;
+    padding: 0 5px;
+}
+
+
+/*.container h2 {
   padding: 0 5px;
-}
+}*/
 
-.container > header li {
-  background-color: white;
-}
-
-.container > hr {
-  margin: 0;
-  padding: 0;
-}
-
-.container > section {
-  margin: 10px 0;
-  box-sizing: border-box;
-  /*padding: 0 5px;*/
-}
-
-.container h2 {
-  padding: 0 5px;
-}
-
-.container > footer {
-  height:50px;
-  background: url("img/subtle_dots.png");
-  padding: 15px 15px 0 0;
-  box-sizing: border-box;
-  text-align: right;
+.container>footer {
+    height: 50px;
+    background: url("img/subtle_dots.png");
+    padding: 15px 15px 0 0;
+    box-sizing: border-box;
+    text-align: right;
 }
 
 .container-4 {
@@ -268,7 +278,6 @@ header .search-block input[type=submit] {
 
 .container-12 {
     width: 900px;
-
 }
 
 .container-6 {
@@ -279,7 +288,7 @@ header .search-block input[type=submit] {
 }
 
 .container-9 {
-    width: 675px;
+    width: 665px;
     float: left;
     box-sizing: border-box;
     padding: 0 5px;
@@ -307,6 +316,7 @@ header .search-block input[type=submit] {
 .bold {
     font-weight: bold;
 }
+
 
 /** {
   padding: 0;
