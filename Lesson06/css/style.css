@@ -2,6 +2,19 @@
   background-color: #abeafa;
 }
 
-.yellow {
+.container {
+    background-color: coral;
+}
+
+.yellow-box {
   background-color: #fff51f;
+  color: black;
+}
+
+.yellow {
+    color: #fff51f;
+}
+
+.social {
+    color: white;
 }
