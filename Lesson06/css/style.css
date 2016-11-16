@@ -15,12 +15,12 @@ header.header {
 }
 
 header article.title-message {
-    height: 300px;
+    /*height: 300px;*/
     margin-bottom: 66px;
     margin-top: 200px;
     font-style: italic;
     font-size: 1.8rem;
-    padding: 80px 20px;
+    padding: 80px 20px 20px 20px;
     text-align: left;
     font-family: Raleway;
     font-weight: bold;
@@ -64,6 +64,9 @@ header .social i {
 
 
 /* Боковое меню */
+div.left-content, div.header-welcome {
+    padding: 0;
+}
 
 sidebar {
     position: relative;
@@ -143,8 +146,6 @@ section.products {
     padding-left: 30px;
 }
 
-section.products {}
-
 section.products .products-list, section.products h2 {
     background-color: #f8f8f8;
     overflow: hidden;
@@ -198,4 +199,23 @@ section.products .sale {
     text-align: right;
     color: #bababa;
     font-size: 2.5rem;
+}
+
+/* pre-footer */
+.instagram {
+    background-color: #eaeaea;
+}
+.instagram img {
+    width: 100%;
+}
+.instagram figure.col-md-2 {
+    /*padding: 10px 0 10px 10px;    */
+    border-left: 10px solid transparent;
+    border-collapse: collapse;
+    padding: 0;
+}
+.instagram .instagram-imgs figure:first-child{
+    border-right: 10px solid transparent;
+    border-left: none;
+
 }
